@@ -15,6 +15,10 @@ public class Main {
 		boolean fin = false;
 		int numeroCliente = 1;
 		
+		// Arranca el endpoint HTTP
+	    new HealthServer(8080);
+		
+		
 		while (!fin)
 		{
 			socketCliente = socketServidor.accept();
